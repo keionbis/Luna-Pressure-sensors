@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Pressure:LPS25HB U1
+U 1 1 600DDD81
+P 3350 2150
+F 0 "U1" H 2920 2146 50  0000 R CNN
+F 1 "LPS25HB" H 2920 2055 50  0000 R CNN
+F 2 "Package_LGA:ST_HLGA-10_2.5x2.5mm_P0.6mm_LayoutBorder3x2y" H 3350 1950 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/lps25hb.pdf" H 3400 1800 50  0001 C CNN
+	1    3350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1750 3200 1750
+Connection ~ 3200 1750
+Wire Wire Line
+	3200 1750 3250 1750
+$Comp
+L power:GND #PWR0101
+U 1 1 600DE68C
+P 3250 2650
+F 0 "#PWR0101" H 3250 2400 50  0001 C CNN
+F 1 "GND" H 3255 2477 50  0000 C CNN
+F 2 "" H 3250 2650 50  0001 C CNN
+F 3 "" H 3250 2650 50  0001 C CNN
+	1    3250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 600DEE3E
+P 4350 2200
+F 0 "R1" H 4420 2246 50  0000 L CNN
+F 1 "10K" H 4420 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4280 2200 50  0001 C CNN
+F 3 "~" H 4350 2200 50  0001 C CNN
+	1    4350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2050 4350 2050
+$Comp
+L Device:Jumper JP1
+U 1 1 600DF3CE
+P 4650 2050
+F 0 "JP1" H 4650 2314 50  0000 C CNN
+F 1 "Jumper" H 4650 2223 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 4650 2050 50  0001 C CNN
+F 3 "~" H 4650 2050 50  0001 C CNN
+	1    4650 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 2050
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 600DF8A8
+P 4950 2050
+F 0 "#PWR0102" H 4950 1900 50  0001 C CNN
+F 1 "+3.3V" V 4965 2178 50  0000 L CNN
+F 2 "" H 4950 2050 50  0001 C CNN
+F 3 "" H 4950 2050 50  0001 C CNN
+	1    4950 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 600E040A
+P 4350 2350
+F 0 "#PWR0103" H 4350 2100 50  0001 C CNN
+F 1 "GND" H 4355 2177 50  0000 C CNN
+F 2 "" H 4350 2350 50  0001 C CNN
+F 3 "" H 4350 2350 50  0001 C CNN
+	1    4350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 600E0AB0
+P 3400 1500
+F 0 "C1" H 3515 1546 50  0000 L CNN
+F 1 "C" H 3515 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3438 1350 50  0001 C CNN
+F 3 "~" H 3400 1500 50  0001 C CNN
+	1    3400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1350 3400 1350
+Wire Wire Line
+	3200 1350 3200 1750
+$Comp
+L power:GND #PWR0104
+U 1 1 600E19A0
+P 3400 1650
+F 0 "#PWR0104" H 3400 1400 50  0001 C CNN
+F 1 "GND" H 3405 1477 50  0000 C CNN
+F 2 "" H 3400 1650 50  0001 C CNN
+F 3 "" H 3400 1650 50  0001 C CNN
+	1    3400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 600E1EAE
+P 3400 1350
+F 0 "#PWR0105" H 3400 1200 50  0001 C CNN
+F 1 "+3.3V" H 3415 1523 50  0000 C CNN
+F 2 "" H 3400 1350 50  0001 C CNN
+F 3 "" H 3400 1350 50  0001 C CNN
+	1    3400 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 1350
+Text Label 3850 2150 0    50   ~ 0
+SCL
+Text Label 3850 1950 0    50   ~ 0
+SDA
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 600E303D
+P 6550 1500
+F 0 "J1" V 6612 1644 50  0000 L CNN
+F 1 "Conn_01x04_Male" V 6703 1644 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 6550 1500 50  0001 C CNN
+F 3 "~" H 6550 1500 50  0001 C CNN
+	1    6550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 600E4164
+P 6650 1700
+F 0 "#PWR0106" H 6650 1450 50  0001 C CNN
+F 1 "GND" H 6655 1527 50  0000 C CNN
+F 2 "" H 6650 1700 50  0001 C CNN
+F 3 "" H 6650 1700 50  0001 C CNN
+	1    6650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 600E43E3
+P 6550 1950
+F 0 "#PWR0107" H 6550 1800 50  0001 C CNN
+F 1 "+3.3V" H 6565 2123 50  0000 C CNN
+F 2 "" H 6550 1950 50  0001 C CNN
+F 3 "" H 6550 1950 50  0001 C CNN
+	1    6550 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 1950 6550 1700
+Text Label 6450 1700 3    50   ~ 0
+SDA
+Text Label 6350 1700 3    50   ~ 0
+SCL
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600E73E8
+P 4200 3900
+F 0 "H1" H 4300 3946 50  0000 L CNN
+F 1 "MountingHole" H 4300 3855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4200 3900 50  0001 C CNN
+F 3 "~" H 4200 3900 50  0001 C CNN
+	1    4200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600E7ABF
+P 4200 4200
+F 0 "H2" H 4300 4246 50  0000 L CNN
+F 1 "MountingHole" H 4300 4155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4200 4200 50  0001 C CNN
+F 3 "~" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
