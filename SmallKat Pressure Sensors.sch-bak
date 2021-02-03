@@ -169,10 +169,10 @@ SDA
 Text Label 6350 1700 3    50   ~ 0
 SCL
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 600E73E8
 P 4200 3900
-F 0 "H?" H 4300 3946 50  0000 L CNN
+F 0 "H1" H 4300 3946 50  0000 L CNN
 F 1 "MountingHole" H 4300 3855 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4200 3900 50  0001 C CNN
 F 3 "~" H 4200 3900 50  0001 C CNN
@@ -180,10 +180,10 @@ F 3 "~" H 4200 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 600E7ABF
 P 4200 4200
-F 0 "H?" H 4300 4246 50  0000 L CNN
+F 0 "H2" H 4300 4246 50  0000 L CNN
 F 1 "MountingHole" H 4300 4155 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4200 4200 50  0001 C CNN
 F 3 "~" H 4200 4200 50  0001 C CNN
